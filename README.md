@@ -1,8 +1,8 @@
-# Guru's Progression Tracker
+# Your Progression
 
 A personal progressive-overload workout tracker with a quote you actually read. Build your own workout splits (chest & triceps, back & biceps, legs — whatever your routine is), log your sets, and let the app tell you exactly what to do next time: repeat the weight, or move up.
 
-**[Live demo →](#)** *https://gurum5.github.io/guru-workout-tracker/*
+**[Live demo →](https://gurum5.github.io/guru-workout-tracker/)**
 
 ## How the progression logic works
 
@@ -38,8 +38,8 @@ Plain HTML, CSS, and vanilla JavaScript. No build step, no framework, no depende
 ## Running locally
 
 ```bash
-git clone https://github.com/<your-username>/ascend.git
-cd ascend
+git clone https://github.com/gurum5/guru-workout-tracker.git
+cd guru-workout-tracker
 open index.html   # or just double-click it
 ```
 
@@ -47,7 +47,7 @@ open index.html   # or just double-click it
 
 1. Push this repo to GitHub.
 2. In repo settings, go to **Pages** → source: `main` branch, root folder.
-3. Live at `https://<your-username>.github.io/ascend/`.
+3. Live at `https://gurum5.github.io/guru-workout-tracker/`.
 
 ## Data model
 
