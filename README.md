@@ -2,7 +2,7 @@
 
 A personal progressive-overload workout tracker with a quote you actually read. Build your own workout splits (chest & triceps, back & biceps, legs — whatever your routine is), log your sets, and let the app tell you exactly what to do next time: repeat the weight, or move up.
 
-**[Live demo →](#)** *(add your GitHub Pages link here once deployed)*
+**[Live demo →](#)** *https://gurum5.github.io/guru-workout-tracker/*
 
 ## How the progression logic works
 
