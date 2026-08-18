@@ -1,4 +1,4 @@
-# Guru's Progression
+# Guru's Progression Tracker
 
 A personal progressive-overload workout tracker with a quote you actually read. Build your own workout splits (chest & triceps, back & biceps, legs — whatever your routine is), log your sets, and let the app tell you exactly what to do next time: repeat the weight, or move up.
 
