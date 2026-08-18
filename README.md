@@ -25,6 +25,12 @@ No guessing what you did last time, no plateauing without noticing.
 - **Local-first** — everything lives in your browser's `localStorage`. Nothing leaves your machine.
 - **Export** — download your full workout + history log as JSON at any time.
 
+## Using it day-to-day
+
+- Bookmark it or add it to your home screen on your phone (in Safari/Chrome, there's usually an "Add to Home Screen" option in the share menu) so it feels like a real app you tap into, instead of hunting for the URL each time.
+- Always open it the same way — same browser, same device — since that's what your data is tied to. If you bookmark it on your phone's Chrome, use that same bookmark every time.
+- Hit "Export JSON" every so often (footer button) as a backup, especially before doing anything like clearing your browser cache or switching phones.
+
 ## Stack
 
 Plain HTML, CSS, and vanilla JavaScript. No build step, no framework, no dependencies. Open `index.html` and it works.
