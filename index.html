@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guru's Progression — Personal Training Log</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="contours" aria-hidden="true"></div>
+
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <div class="brand">
+        <span class="brand-mark">▲</span>
+        <span class="brand-name">Guru's Progression</span>
+      </div>
+      <span class="brand-tagline">My own training log — built rep by rep.</span>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section class="quote-plaque" aria-live="polite">
+      <p id="quote-text" class="quote-text"></p>
+      <button id="quote-refresh" class="quote-refresh" aria-label="Get another quote">↻ another one</button>
+    </section>
+
+    <!-- ===== HOME VIEW ===== -->
+    <section id="view-home" class="view">
+      <div class="view-head">
+        <h1>Your workouts</h1>
+        <button id="btn-new-workout" class="btn-primary">+ New workout</button>
+      </div>
+      <div id="filter-row" class="filter-row"></div>
+      <div id="workout-list" class="workout-grid"></div>
+      <div id="home-empty" class="empty-state" hidden>
+        <p id="empty-text">No workouts yet.</p>
+        <p class="empty-sub">Build one — chest &amp; triceps, back &amp; biceps, legs, whatever your split is.</p>
+      </div>
+
+      <div class="progress-section">
+        <div class="view-head"><h2>Your climb</h2></div>
+        <div id="progress-stats" class="progress-stats"></div>
+        <div id="progress-trail" class="trail-wrap"></div>
+        <p id="trail-caption" class="trail-caption"></p>
+      </div>
+    </section>
+
+    <!-- ===== NEW / EDIT WORKOUT VIEW ===== -->
+    <section id="view-builder" class="view" hidden>
+      <div class="view-head">
+        <h1 id="builder-title">New workout</h1>
+        <button id="btn-cancel-builder" class="btn-ghost">Cancel</button>
+      </div>
+
+      <div class="field">
+        <label for="workout-name">Workout name</label>
+        <input type="text" id="workout-name" placeholder="e.g. Chest &amp; Triceps">
+      </div>
+
+      <div class="field">
+        <label for="workout-category">Category</label>
+        <select id="workout-category">
+          <option value="Upper Body">Upper Body</option>
+          <option value="Lower Body">Lower Body</option>
+          <option value="Chest &amp; Triceps">Chest &amp; Triceps</option>
+          <option value="Back &amp; Biceps">Back &amp; Biceps</option>
+          <option value="Push">Push</option>
+          <option value="Pull">Pull</option>
+          <option value="Legs">Legs</option>
+          <option value="Full Body">Full Body</option>
+          <option value="Core">Core</option>
+          <option value="__custom">Custom...</option>
+        </select>
+        <input type="text" id="workout-category-custom" class="custom-cat-input" placeholder="Name your own category" hidden>
+      </div>
+
+      <div id="builder-exercises" class="builder-exercise-list"></div>
+
+      <button id="btn-add-exercise-row" class="btn-ghost btn-add-row">+ Add exercise</button>
+
+      <div class="builder-actions">
+        <button id="btn-save-workout" class="btn-primary">Save workout</button>
+      </div>
+    </section>
+
+    <!-- ===== WORKOUT DETAIL VIEW ===== -->
+    <section id="view-detail" class="view" hidden>
+      <div class="view-head">
+        <div>
+          <button id="btn-back" class="btn-back">← All workouts</button>
+          <h1 id="detail-title"></h1>
+        </div>
+        <button id="btn-delete-workout" class="btn-ghost btn-danger">Delete workout</button>
+      </div>
+      <div id="detail-exercises" class="detail-exercise-list"></div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <span>Stored locally in this browser · exportable anytime</span>
+    <button id="export-btn" class="btn-ghost">Export JSON</button>
+  </footer>
+
+  <script src="quotes.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
